@@ -1,0 +1,49 @@
+@import "libs/bootstrap-reboot.min.scss";
+@import "libs/fonts";
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+
+
+
+@import "base/variables";
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1140px) {
+    .container {
+        width: auto;
+    }
+}
+
+@import "blocks/title";
+@import "blocks/btns";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/pluses";
+@import "blocks/solutions";
+@import "blocks/benefits";
+@import "blocks/data";
+@import "blocks/work";
+@import "blocks/footer";
+@import "blocks/pageup";
+@import "blocks/popup";
+@import "blocks/slider";
+
+@import "blocks/header_media";
+@import "blocks/promo_media";
+@import "blocks/btns_media";
+@import "blocks/pluses_media";
+@import "blocks/solutions_media";
+@import "blocks/benefits_media";
+@import "blocks/title_media";
+@import "blocks/data_media";
+@import "blocks/footer_media";
+@import "blocks/modal_media";

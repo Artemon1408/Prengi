@@ -1,0 +1,19 @@
+@media (max-width: 575px) {
+    .modal {
+        width: 320px;
+        padding: 20px 5px 0 10px;
+        min-height: 380px;
+
+        &__close {
+            top: 400px;
+            right: 147px;
+        }
+    }
+
+    .feed-form {
+        &_mt {
+            margin-top: 25px;
+        }
+    }
+
+}

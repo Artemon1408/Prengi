@@ -1,0 +1,24 @@
+@media (max-width: 1140px) {
+    .benefits {
+        &__items {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .benefits {
+        &__item {
+            height: 260px;
+            width: 100%;
+            &-descr {
+                font-size: 13px;
+            }
+            &-bg {
+                height: 115px;
+            }
+        }
+    }
+}

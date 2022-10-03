@@ -1,0 +1,40 @@
+@media (max-width: 991px) {
+    .footer {
+        &__company {
+            &-descr {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+            &__company {
+                &-descr {
+                    display: none;
+                }
+            }
+            &__modules {
+                &-link {
+                    font-size: 10px;
+                }
+            }
+        }
+}
+
+@media (max-width: 575px) {
+    .footer {
+        min-height: 300px;
+        &__content {
+            justify-content: center;
+            align-items: center;
+        }
+        &__company {
+            text-align: center;
+        }
+        &__modules {
+            display: none;
+        }
+    }
+}

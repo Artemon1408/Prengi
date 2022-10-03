@@ -1,0 +1,115 @@
+@media (max-width: 1140px) {
+    .promo {
+        &__head {
+            justify-content: space-around;
+        }
+        &__body {
+            justify-content: space-around;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .promo {
+        &__body {
+            padding: 0 5px;
+        }
+        
+        &__descr {
+            &-title {
+                font-size: 37px;
+            }
+            &-subtitle {
+                font-size: 20px;
+            }
+        }
+        .dot {
+            border-color: $main_color;
+            
+        }
+        .active {
+            background-color: $main_color;
+        }
+        
+        ::before,
+        ::after {
+            border-color: $main_color;
+        }
+
+        
+        
+    }
+        
+}
+
+@media (max-width: 767px) {
+    .promo {
+        &__iphone {
+            display: none;
+        }
+        &__nav {
+            min-width: 330px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: -100%;
+            widows: 50%;
+            height: 100vh;
+            padding: 20px 14px;
+            background-color: rgba(0, 130, 161, .8);
+            transition: .6s all;
+            &-active {
+                left: 0;
+            }
+            &-link {
+                font-size: 20px;
+            }
+        }
+        &__body {
+            text-align: center;
+           
+        }
+    }
+    .hamburger {
+        display: block;
+        
+        width: 45px;
+        height: 12px;
+        span {
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 5px;
+            transition: .5s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        &__nav {
+            min-width: 320px;
+        }
+        &__slider {
+            left: 58%;
+            transform: translateX(-42%);
+        }
+    }
+}
